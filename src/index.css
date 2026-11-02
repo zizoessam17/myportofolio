@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: night --default
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem; /* keeps section titles clear of the sticky navbar */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
